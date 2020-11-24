@@ -1,0 +1,39 @@
+<div class = "container-fluid">
+  <br>
+  <h4>Editeaza categoria de produs</h4> 
+  <br>
+  
+  <form #prodCategData="ngForm" (ngSubmit)="updateProdCateg(prodCategData.value); prodCategData.reset()" > 
+    <div class="row">
+    <div class="col-sm-4 form-grup" >
+          <label> Nume categorie produs </label>
+          <input 
+             type="text" 
+             id="name"
+             class="form-control" 
+             required 
+             name="name" 
+             [(ngModel)]="data.name">
+       </div>
+       
+    <div class="col-sm-2 form-grup">
+          <label> Cod categorie produs</label>
+          <input 
+             type="number" 
+             id="number"
+             class="form-control" 
+             required 
+             pattern="^[1-9]+[0-9]*$"
+             name="code" 
+             [(ngModel)]="data.code">
+     </div>
+    </div>
+  
+  
+  
+    <div class="btn-group btn-group-sm">
+    <button type="submit" class="btn btn-default btn-xl" [disabled]="!prodCategData.valid">Save</button>    
+    <button type="button" class="btn btn-default btn-xl" (click)="goBack()">Back</button>
+    </div>
+  </form>
+  </div>

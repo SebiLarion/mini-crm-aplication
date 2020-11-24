@@ -1,0 +1,42 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Numar</th>
+      <th>Data</th>
+      <th>Serie</th>
+      <th></th>
+    </tr>
+  </thead>
+ 
+  <tr *ngFor="let fac of fact" [class.selected]="fac===selectedF"(click)="onSelect(fac)" >
+                   
+        <td><label>{{fac.num}}</label>  </td> 
+        <td><label>{{fac.data}}</label>  </td>
+        <td><label>{{fac.serie}}</label>  </td>
+  </tr>
+  </table>
+  <div *ngIf="selectedF" >
+    <h2>Detalii factura serie: {{selectedF.serie}} si numar: {{selectedF.num}} </h2>
+    <div><label><b>Data facturii: </b></label>{{selectedF.data}}</div>
+    <hr>
+    <div>
+      
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nume produs</th>
+            <th>Cod produs</th>
+            <th>CategoryID</th>
+            
+          </tr>
+        </thead>
+       
+        <tr  *ngFor="let pro of prod"  >
+              <td *ngIf="pro.nrfact===selectedF.num" ><label>{{pro.name}}</label>  </td> 
+              <td *ngIf="pro.nrfact===selectedF.num" ><label>{{pro.code}}</label>  </td>
+              <td *ngIf="pro.nrfact===selectedF.num" ><label>{{pro.categoryid}}</label>  </td>
+             </tr>
+                   
+         </table>     
+    </div>
+  </div>

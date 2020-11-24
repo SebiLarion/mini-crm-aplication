@@ -1,0 +1,114 @@
+{
+  "prodCateg": [
+    {
+      "name": "IT -Telecomunicatii",
+      "code": 121,
+      "id": 2
+    },
+    {
+      "name": "Electrocasnice Mici",
+      "code": 2367293,
+      "id": 3
+    },
+    {
+      "name": "Electrocasnice Mari",
+      "code": 65454,
+      "id": 5
+    },
+    {
+      "name": "Bricolaj",
+      "code": 74,
+      "id": 6
+    },
+    {
+      "name": "Casa si gradina",
+      "code": 478,
+      "id": 7
+    }
+  ],
+  "prod": [
+    {
+      "name": "Detergent Universal",
+      "code": 10,
+      "categoryid": 1,
+      "id": 2,
+      "nrfact": "235487"
+    },
+    {
+      "name": "Tricouri",
+      "code": 121,
+      "categoryid": 52,
+      "id": 5,
+      "nrfact": "2323423"
+    },
+    {
+      "name": "Masina de spalat vase",
+      "code": 46,
+      "categoryid": 4,
+      "id": 6,
+      "nrfact": "235487"
+    },
+    {
+      "name": "Paine",
+      "code": 786,
+      "categoryid": 47,
+      "id": 9,
+      "nrfact": "34534587"
+    },
+    {
+      "name": "Zahar Margaritar",
+      "code": 54,
+      "categoryid": "47",
+      "id": 10,
+      "nrfact": "235487"
+    },
+    {
+      "name": "Faina",
+      "code": 14,
+      "categoryid": "47",
+      "id": 11,
+      "nrfact": "2323423"
+    },
+    {
+      "name": "Pantaloni",
+      "code": 12,
+      "categoryid": "52",
+      "nrfact": "34534587",
+      "id": 12
+    },
+    {
+      "name": "Masina de spalat  rufe",
+      "code": 4,
+      "categoryid": "4",
+      "nrfact": "2323423",
+      "id": 13
+    },
+    {
+      "name": "Detergent Vase",
+      "code": 2457,
+      "categoryid": "1",
+      "nrfact": "34534587",
+      "id": 14
+    }
+  ],
+  "facturi": [
+    {
+      "num": "235487",
+      "data": "1.10.2018",
+      "serie": "GVC",
+      "id": 1
+    },
+    {
+      "num": "34534587",
+      "data": "1.1.2018",
+      "serie": "FFF",
+      "id": 21
+    },
+    {
+      "num": "2323423",
+      "data": "1.11.2018",
+      "serie": "XXX",
+      "id": 6
+    }
+  ]
+}

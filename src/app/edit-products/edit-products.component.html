@@ -1,0 +1,65 @@
+<div class = "container-fluid">
+
+  <br>
+  <h4>Editeaza un produs</h4> 
+  <br>
+  
+  <form #prodData="ngForm" (ngSubmit)="updateProd(prodData.value); prodData.reset()" > 
+  <div class="row">
+    <div class="col-sm-4 form-grup" >
+          <label> Nume produs </label>
+          <input 
+             type="text" 
+             id="name"
+             class="form-control" 
+             required 
+             name="name" 
+             [(ngModel)]="data.name">
+      </div>
+       
+     <div class="col-sm-2 form-grup">
+          <label> Cod produs</label>
+          <input 
+             type="number" 
+             id="number"
+             class="form-control" 
+             required 
+             pattern="^[1-9]+[0-9]*$"
+             name="code" 
+             [(ngModel)]="data.code">
+     </div>
+     <div class="col-sm-2 form-grup">
+      <label> CategoryID produs</label>
+      <select
+         type="number" 
+         id="number"
+         name="categoryid" 
+         class="form-control" 
+         [(ngModel)]="data.categoryid">
+          <option  value="" disabled selected>Selecteaza o categorie</option>
+          <option *ngFor="let pro of prObj" [value]=pro> {{pro}} </option>
+         </select>  
+       </div> 
+       <div class="col-sm-2 form-grup">
+        <label> Nr Factura </label>
+        <select
+           type="text" 
+           id="nrfact"
+           name="nrfact" 
+           class="form-control" 
+           [(ngModel)]="data.nrfact">
+            <option  value="" disabled selected>Selecteaza o categorie</option>
+            <option *ngFor="let pro of nrfact" [value]=pro> {{pro}} </option>
+           </select>  
+         </div> 
+     </div>
+   
+  
+   <div class="btn-group btn-group-sm">
+      <button type="submit" class="btn btn-default btn-xl" [disabled]="!prodData.valid">Save</button>    
+      <button type="button" class="btn btn-default btn-xl" (click)="goBack()">Back</button>
+      </div>
+   
+    </form>
+
+</div>
