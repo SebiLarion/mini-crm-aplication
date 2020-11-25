@@ -26,7 +26,7 @@ export class EditCategoryComponent implements OnInit {
 
   ngOnInit() {
     this.i = +this.route.snapshot.paramMap.get('id');
-    this.http.get("http://localhost:5555/prodCateg").subscribe(        
+    this.http.get("http://localhost:3000/prodCateg").subscribe(        
             (res:Response) => {
                    this.productObj=res;        
                    this.l=Object.keys(this.productObj).length;  

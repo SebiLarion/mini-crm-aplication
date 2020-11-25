@@ -29,7 +29,7 @@ export class EditProductsComponent implements OnInit {
   ngOnInit() {
 
     this.i = +this.route.snapshot.paramMap.get('id');
-    this.http.get("http://localhost:5555/prod").subscribe(        
+    this.http.get("http://localhost:3000/prod").subscribe(        
             (res:Response) => {
                    this.productObj=res;        
                    this.l=Object.keys(this.productObj).length;  

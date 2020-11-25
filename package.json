@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "json:server": "json-server --watch prodCateg.json"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,7 @@
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
+    "json-server": "^0.16.3",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },

@@ -16,9 +16,9 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class ProductsService {
-  private url1: string="http://localhost:5555/prod"; 
-  private url2: string="http://localhost:5555/prodCateg";
-  private url3: string="http://localhost:5555/facturi";
+  private url1: string="http://localhost:3000/prod"; 
+  private url2: string="http://localhost:3000/prodCateg";
+  private url3: string="http://localhost:3000/facturi";
 
   constructor(private http: HttpClient) { }
 
